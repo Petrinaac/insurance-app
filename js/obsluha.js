@@ -1,1 +1,0 @@
-const storage = new Storage()
