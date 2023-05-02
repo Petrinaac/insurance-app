@@ -48,11 +48,6 @@ function createNewRow() {
         td.textContent = phone;
       } 
     } 
-    clear()
-  }
-
-  function clear() {
-    document.getElementById("form").reset();
   }
 
 
