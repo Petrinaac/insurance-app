@@ -1,208 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Montserrat:wght@400;700&family=Poppins:wght@400;800&family=Roboto:wght@400;500;700&display=swap');
-
 html {
     background: #4D724D;;
 }
 
-body {
-    font: 14px "Roboto";
-	background: #F5F5F5;
-	color: #000000;
-	margin: 0;
-	padding-top: 100px;
-    min-width: 960px;
-	box-sizing: border-box;
-}
-
-.header {
-    display: flex;
-	justify-content: space-evenly;
-	align-items: center;
+nav {
     background: #4D724D;
-	width: 100%;
-    height: 75px;
-	color: #F5F5F5;
-	position: fixed;
-    top: 0;
-    left: 0;
 }
 
-.logo {
-    display: flex;
-    align-items: flex-end;
-    font-size: 1.8rem;
-}
-
-#span {
-    color: #000000;
+.navbar-brand {
     font-size: 2rem;
-}
-
-.logo img {
-    height: 3rem;
-}
-
-.list {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    gap: 3rem;
-}
-
-.list a {
-    font-size: 1.2rem;
     color: white;
-    text-decoration: none;
 }
 
-.list a:hover {
+.navbar-brand:hover {
+    color: white;
+}
+
+.nav-item a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(255, 255, 255);
+    margin-right: 2rem;
+}
+
+.nav-item a:hover {
     border-bottom: 3px solid rgb(0, 0, 0);
     padding-bottom: 5px;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    max-width: 960px;
-}
-
-.main-content h2 {
-    font-size: 2.5rem;
-    margin-bottom: 60px;
+h2 {
     border-bottom: 3px solid #4D724D;
     padding-bottom: 10px ;
-    width: 100%;
 }
 
-.main-content p {
-    font-size: 1.2rem;
-    margin-left: 40px;
-    line-height: 35px;
-}
-
-.avatar {
-    height: 128px;
-    margin: 30px 60px 0px 0px
-
-}
-
-.info {
-    display: flex;
-}
-
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 500px;
-  }
-
-
-input {
-    height: 45px;
-    min-width: 300px;
-    margin: 0px 20px 20px 20px;
-    border-radius: 3px;
-    border: 1px solid black;
-    padding: 0px 0px 0px 15px;
-    background: #f8f8f8;
-    font-size: 1rem;
-}
-  
-.firstInput, .secondInput {
-    display: flex;
-    flex-direction: column;
+.input {
     margin-bottom: 20px;
-    width: 20%;
-  }
-  
-.firstInput label, .secondInput label {
-    padding-left: 19px;
-    margin-bottom: 10px;
-    text-align: left;
-    font-size: 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
+    padding: 10px;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
-  button {
-    display: block;
-    margin-left: 515px;
-    padding: 12px 24px;
-    border-radius: 8px;
-    border-color: rgb(126, 125, 125);
+
+.table thead {
+    font-size: 1.3rem;
+    font-weight: bold;
+    background-color: #4D724D;
+    border: none;
+}
+
+.table td {
+    padding: 15px 20px 15px 15px;
+}
+
+.table-hover tbody tr:hover td {
     background-color: #8DB48E;
-    color: #ffffff;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  button:hover {
-    transform: translateY(-1px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-.table {
-    border-collapse: collapse;
-    margin: 0px 0px 30px 80px;
-    width: 870px;
-  }
-  
-  .table th {
-    background: #8DB48E;
-    color: #F5F5F5;
-    text-align: center;
-    font-weight: bold;
-    padding: 1rem;
-    font-size: 1.5rem;
-  }
-  
-  .table td {
-    padding: 1.2rem;
-    border: 1px solid black;
-    border-color: rgb(208, 208, 209);
-    font-size: 1rem;
-  }
-
-  @media screen and (max-width: 767px) {
-
-    button {
-        margin-left: 14rem;
-    }
-
-    .header {
-        justify-content: flex-start;
-    }
-
-    .firstInput, .secondInput {
-      width: 100%;
-    }
-
-    .info {
-        display: block;
-    }
-
-    .osoba-foto {
-        margin-bottom: 20px;
-        margin-left: 190px;
-    }   
-
-    .main-content h2 {
-        margin-left: 120px;
-    }
-
 }
 
 footer {
-	box-sizing: border-box;
-	text-align: center;
-	background: #4D724D;
-	height: 100px;
-	padding: 50px 0 0 0;
-	color: white;
-	border-radius: 2px
+    background: #4D724D;
+    clip-path: polygon(0 30px, 100% 0, 100% 105%, 0 105%);
+    padding: 20px;
+    color: white;
 }
 
+.btn {
+    border: 1px solid #8DB48E;
+}
 
+.btn:hover {
+    background: #4D724D;
+    color: white;
+
+}
